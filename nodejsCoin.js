@@ -73,7 +73,6 @@ class Blockchain{
 let AnilCoin = new Blockchain()
 console.log("mining AnilCoin in progress...");
 
-console.log("Is BlockChain valid ? : ",AnilCoin.validateChainIntegrity());
 
 // Add new Block
 AnilCoin.addNewBlock(
@@ -91,6 +90,8 @@ AnilCoin.addNewBlock(
                 quantity:50
             })
 );
+
+console.log("Is BlockChain valid ? : ",AnilCoin.validateChainIntegrity());
 
 AnilCoin.addNewBlock(
     new Block("30/08/2022",
